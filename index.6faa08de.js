@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector(".nav-menu-btn"),t=document.querySelector(".nav-menu"),n=document.querySelectorAll(".js-nav-menu-link"),c=n=>{const c="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!c),t.classList.toggle("is-open")};n.forEach((e=>e.addEventListener("click",c))),e.addEventListener("click",c)})();
+//# sourceMappingURL=index.6faa08de.js.map

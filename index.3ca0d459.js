@@ -1,0 +1,2 @@
+(()=>{const e={openModalBtn:document.querySelector(".contacts-section__buttons-franchise"),closeModalBtn:document.querySelector(".modal-franchise__button-close"),modal:document.querySelector(".contacts-backdrop__franchise"),body:document.querySelector("body")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
+//# sourceMappingURL=index.3ca0d459.js.map
