@@ -1,0 +1,52 @@
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  // -- додав, щоб респонсив працював для mobile - тобто до 767px
+  // -- 320px - то найменший варіант що має підтримуватись,
+  // -- тобто якщо екран меньший - повинен з'являтися горизонтальний скрол
+  min-width: 320px;
+  
+  
+  // -- і це теж зайве, бо респонсив на мобілці гробить
+  // @media screen and (min-width: 320px) {
+  //   max-width: 320px;
+  // }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.section {
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: end;
+  }
+}

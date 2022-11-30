@@ -1,0 +1,69 @@
+<section class="about section" id="how-its-made">
+  <div class="container">
+    <span class="about__label">tradition and love</span>
+    <h2 class="about__title">how it’s made?</h2>
+  </div>
+  <div class="about__bg">
+    <div class="container">
+      <div class="about__container">
+        <picture>
+          <source
+            srcset="
+              ./images/about/home-pic4_320.png    320w,
+              ./images/about/home-pic4_320@2x.png 640w,
+              ./images/about/home-pic4_320@3x.png 960w
+            "
+            media="(max-width: 767px)"
+            sizes="(min-width: 320px) 100vw"
+          />
+          <source
+            srcset="
+              ./images/about/home-pic4_768.png     336w,
+              ./images/about/home-pic4_768@2x.png  672w,
+              ./images/about/home-pic4_768@3x.png 1008w
+            "
+            media="(min-width: 768px) and (max-width: 1199px)"
+            sizes="336px"
+          />
+          <source
+            srcset="
+              ./images/about/home-pic4_1200.png     501w,
+              ./images/about/home-pic4_1200@2x.png 1002w,
+              ./images/about/home-pic4_1200@3x.png 1503w
+            "
+            media="(min-width: 1200px)"
+            sizes="501px"
+          />
+          <img
+            class="about__img"
+            src="./images/about/home-pic4_1200.png"
+            alt="cow and jug of milk"
+          />
+        </picture>
+        <div class="about__column">
+          <div class="about__text">
+            <p class="about__text--black">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+              justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+              erat at justo fringilla.
+            </p>
+            <p>
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio
+              elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+              euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+              Cras massa nibh, tincidunt.
+              <br /><br />
+              Aliquam erat volutpat. Aenean accumsan.
+            </p>
+          </div>
+          <button class="about__button" type="button">
+            <span>Read more</span
+            ><svg class="vector" width="8" height="10">
+              <use href="./images/icons.svg#vector"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

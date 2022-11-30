@@ -1,0 +1,202 @@
+<!-- хедэр -->
+<header class="page-header">
+  <div class="container">
+    <a href="" class="logo">
+      <img
+        srcset="
+          ./images/header/logo.png    1x,
+          ./images/header/logo@2x.png 2x,
+          ./images/header/logo@3x.png 3x
+        "
+        src="./images/header/logo.png"
+        width="199"
+        alt="лого компании"
+      />
+    </a>
+    <div class="page-header__btn-set">
+      <button
+        class="nav-menu-btn"
+        type="button"
+        aria-expanded="false"
+        aria-label="Переключатель мобильного меню"
+      >
+        <svg class="icon-burger" width="20" height="13">
+          <use href="./images/icons.svg#burger"></use>
+        </svg>
+        <svg class="icon-cross" width="14" height="14">
+          <use href="./images/icons.svg#cross"></use>
+        </svg>
+      </button>
+      <button type="button" class="buy-btn" aria-label="кнопка быстрой покупки">
+        <span class="btn__txt">Buy now</span>
+        <svg class="btn__icn" width="6" height="10">
+          <use href="./images/icons.svg#arrow"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item">
+          <a class="nav-menu__link js-nav-menu-link" href="">Home</a>
+        </li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link js-nav-menu-link" href="#about">About us</a>
+        </li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link js-nav-menu-link" href="#how-its-made"
+            >How it’s made?</a
+          >
+        </li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link js-nav-menu-link" href="#products"
+            >Our products</a
+          >
+        </li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link js-nav-menu-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- модалка -->
+<!-- <div data-modal class="backdrop is-hidden">
+  <div class="modal">
+    <button type="button" data-modal-close class="modal__closebtn"></button>
+    <p class="modal__title"></p>
+    <form action="" class="modal__form"></form>
+  </div>
+</div> -->
+
+<!-- секция герой -->
+<section class="hero">
+  <div class="container">
+    <div class="bg-circle n1"></div>
+    <div class="bg-circle n2"></div>
+    <div class="bg-circle n3"></div>
+    <div class="hero__thumb">
+      <h1 class="hero__slogan">
+        Ice cream made with <span class="hero__accent">passion</span>
+      </h1>
+      <ul class="hero__link-set">
+        <li class="hero__link-thumb">
+          <a class="hero__link" href="#products">Products</a>
+        </li>
+        <li class="hero__link-thumb">
+          <a class="hero__link" href="#how-its-made">How it’s made?</a>
+        </li>
+      </ul>
+      <div class="slider">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/bio-eco.png    1x,
+              ./images/hero/bio-eco@2x.png 2x,
+              ./images/hero/bio-eco@3x.png 3x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero/bio-eco-tab.png    1x,
+              ./images/hero/bio-eco-tab@2x.png 2x,
+              ./images/hero/bio-eco-tab@3x.png 3x
+            "
+          />
+          <img
+            class="slider__img"
+            src="./images/hero/bio-eco.png"
+            alt="Кувшин молока био-эко"
+            width="213"
+          />
+        </picture>
+        <details class="slider__fulltxt">
+          <summary class="slider__shorttxt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+            pariatur vel aut magni optio delectus.
+          </summary>
+          Vero, repellat temporibus velit dicta non et. Aut ipsum cupiditate
+          tempora quia, sequi libero non. Quam vero at consequuntur! A enim
+          error molestias reiciendis fugiat? Impedit hic ab beatae a ea fugit
+          tempora itaque architecto harum? Architecto, aliquam. Temporibus,
+          dolorum.
+        </details>
+      </div>
+    </div>
+
+    <!-- объекты компании -->
+    <aside class="counter">
+      <ul class="counter__set">
+        <li class="counter__item">
+          <span class="counter__amount">16</span>cafes
+        </li>
+        <li class="counter__item">
+          <span class="counter__amount">23</span>food trucks
+        </li>
+      </ul>
+    </aside>
+    <!-- картинки -->
+    <div>
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/icecream-horn-desktop.png    1x,
+            ./images/hero/icecream-horn-desktop@2x.png 2x,
+            ./images/hero/icecream-horn-desktop@3x.png 3x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/icecream-horn-tab.png    1x,
+            ./images/hero/icecream-horn-tab@2x.png 2x,
+            ./images/hero/icecream-horn-tab@3x.png 3x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/hero/icecream-horn.png    1x,
+            ./images/hero/icecream-horn@2x.png 2x,
+            ./images/hero/icecream-horn@3x.png 3x
+          "
+        />
+        <img
+          class="hero__mainimg"
+          src="./images/hero/icecream-horn-desktop.png"
+          alt="Рожок разноцветного мороженого"
+          width="236"
+        />
+      </picture>
+      <div class="hero__big-circle"></div>
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/tasty.png    1x,
+            ./images/hero/tasty@2x.png 2x,
+            ./images/hero/tasty@3x.png 3x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/tasty-tab.png    1x,
+            ./images/hero/tasty-tab@2x.png 2x,
+            ./images/hero/tasty-tab@3x.png 3x
+          "
+        />
+
+        <img
+          class="hero__secondaryimg"
+          src="./images/hero/tasty.png"
+          alt="Барышня лижет мороженое>"
+          width="236"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
